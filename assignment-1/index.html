@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Filter & Sorting</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                   
+</head>
+<body>
+
+    <!-- header starts -->
+
+    <section class="header-section">
+        <header class="main-header-section">
+            <div class="brand">
+                <span class="brand-text">e!</span>
+            </div>
+            <div class="header-buttons">
+                <button class="btn">Login</button>
+                <button class="btn btn-border">Create an Account</button>
+            </div>
+        </header>
+    </section>
+
+    <!-- body starts -->
+
+    <div class="page-heading">
+        <p>Breakfast Places in Mumbai</p>
+    </div>
+
+    <!-- main section layout -->
+
+    <section class="main-body-design">
+
+        <!-- filter division starts -->
+
+        <div class="filter-sorting-div">
+            <div class="filter-heading">
+                <p class="filter">Filters</p>
+                <p class="search-lebel">Select Location</p>
+                <select name="search" id="search-location" class="select-input-box">
+                    <option value="select">Select Location</option>
+                </select>
+            </div>
+
+            <div class="food-categories">
+                <p>Cusine</p>
+                <div>
+                <input type="checkbox" name="North-Indian" id="first-checklist" class="checklist">
+                <label for="first-checklist" class="food-types">North Indian</label>
+                </div>
+                <div>
+                <input type="checkbox" name="South-Indian" id="second-checklist" class="checklist" checked>
+                <label for="second-checklist" class="food-types">South Indian</label>
+                </div>
+                <div>
+                <input type="checkbox" name="Chinese" id="third-checklist" class="checklist" checked>
+                <label for="third-checklist" class="food-types">Chinese</label>
+                </div>
+                <div>
+                <input type="checkbox" name="Fast-Food" id="fourth-checklist" class="checklist">
+                <label for="fourth-checklist" class="food-types">Fast Food</label>
+                </div>
+                <div>
+                <input type="checkbox" name="Street-Food" id="fifth-checklist" class="checklist">
+                <label for="fifth-checklist" class="food-types">Street Food</label>
+                </div>
+            </div>
+
+            <div class="price-filter">
+                <p>Cost for Two</p>
+                <div>
+                <input type="radio" name="radio" id="first-radio">
+                <label for="first-radio" class="radio-label">Less than `500</label>
+                </div>
+                <div>
+                <input type="radio" name="radio" id="second-radio">
+                <label for="second-radio" class="radio-label">`500 to `1000</label>
+                </div>
+                <div>
+                <input type="radio" name="radio" id="third-radio">
+                <label for="third-radio" class="radio-label">`1000 to `1500</label>
+                </div>
+                <div>
+                <input type="radio" name="radio" id="fourth-radio">
+                <label for="fourth-radio" class="radio-label">`1500 to `2000</label>
+                </div>
+                <div>
+                <input type="radio" name="radio" id="fifth-radio">
+                <label for="fifth-radio" class="radio-label">`2000+</label>
+                </div>
+            </div>
+
+            <div class="sorting-price">
+                <p>Sort</p>
+                <div>
+                <input type="radio" name="" id="sort-1st">
+                <label for="sort-1st">Price low to high</label>
+                </div>
+                <div>
+                <input type="radio" name="" id="sort-2nd">
+                <label for="sort-2nd">Price high to low</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Food element's Container starts-->
+
+        <div class="menu-pag-div">
+
+            <article class="menu-elements">
+            <div class="food-flex">
+                <div class="food-img">
+                <!-- img -->
+                </div>
+                <div class="food-details">
+                    <p class="food-name">The Big Chill Cakery</p>
+                    <p>FORT</p>
+                    <p class="food-desc">Shop 1, Plot D, Samruddhi Complex, Chincholi …</p>
+                </div>
+            </div>
+                <hr>
+                <div class="food-price-details">
+                    <div class="price-label">
+                        <p>CUISINES:</p>
+                        <p>COST FOR TWO:</p>
+                    </div>
+                    <div class="food-cost">
+                        <p>Bakery</p>
+                         <p><span>₹</span>700</p> <!-- rupees icon => ctrl + shift + 4 -->
+                    </div>
+                </div>
+            </article>
+
+            <article class="menu-elements">
+            <div class="food-flex">
+                <div class="food-img">
+                <!-- img -->
+                </div>
+                <div class="food-details">
+                    <p class="food-name">The Bake Shop</p>
+                    <p>FORT</p>
+                    <p class="food-desc">Shop 1, Plot D, Samruddhi Complex, Chincholi …</p>
+                </div>
+            </div>
+                <hr>
+                <div class="food-price-details">
+                    <div class="price-label">
+                        <p>CUISINES:</p>
+                        <p>COST FOR TWO:</p>
+                    </div>
+                    <div class="food-cost">
+                        <p>Bakery</p>
+                        <p><span>₹</span>700</p> <!-- rupees icon => ctrl + shift + 4 -->
+                    </div>
+                </div>
+            </article>
+
+        <!-- paginations division starts -->
+
+        <div class="pagination">
+            <button class="arrow arrow-left">&lt;</button>
+            <button class="page active">1</button>
+            <button class="page">2</button>
+            <button class="page">3</button>
+            <button class="page">4</button>
+            <button class="page">5</button>
+            <button class="arrow arrow-right">&gt;</button>
+          </div>
+        </div>
+
+    </section>
+</body>
+</html>

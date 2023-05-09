@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  .header-section{
+    width: 95%;
+    height: 80px;
+    background-color: #CE0505;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-header-section {
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .brand {
+    background-color: white;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .brand-text {
+    font-size: 32px;
+    font-weight: 600;
+    color: #EB2929;
+  }
+
+  .btn {
+    margin: 0px 5px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  .btn:hover{
+    cursor: pointer;
+  }
+  
+  .btn-border {
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 181px;
+    height: 46px;
+  }
+
+  .page-heading{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #192F60;
+    margin-left: 10%;
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+
+  .main-body-design{
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
+  .filter-sorting-div{
+    width: 20%;
+    height: 675px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px 3px;
+    border-radius: 2px;
+    color: #192F60;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    padding-left: 25px;
+    padding-top: 25px;
+  }
+
+  .filter-heading{
+    margin-bottom: 20px;
+  }
+
+  .filter-heading > .filter{
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .search-lebel{
+    margin: 8px 0px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .select-input-box{
+    width: 208px;
+    height: 38px;
+    border: 1px solid #8C96AB;
+    border-radius: 3px;
+    padding: 0px 15px;
+    color: #8C96AB;
+    font-size: 15px;
+  }
+
+  .food-categories > p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .food-categories{
+    margin-bottom: 20px;
+  }
+
+  .food-categories > div {
+    margin-top: 8px;
+  }
+
+  .food-categories > div input[type=checkbox] {
+    position: absolute;
+    visibility: hidden;
+    cursor: pointer;
+  }
+
+  .food-categories > div .food-types {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-left: 10px;
+    color: #8C96AB;
+    cursor: pointer;
+  }
+
+  /* ::before is a pseudo selector through which we can add content before any element */
+  .food-categories > div .food-types::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    margin-right: 14px;
+    border: 2px solid #324b78;
+  }
+
+  .food-categories > div .food-types:hover::before,
+  .food-categories > div input[type=checkbox]:hover + .food-types::before {
+    background-color: #384c71;
+  }
+
+  .food-categories > div input[type=checkbox]:checked + label::before {
+    content: "\2713";
+    color: white;
+    background-color: #324b78;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .price-filter > p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .price-filter {
+    margin-bottom: 20px;
+  }
+
+  .price-filter > div {
+    margin-top: 8px;
+  }
+
+  .price-filter > div input[type=radio]{
+    position: absolute;
+    visibility: hidden;
+    cursor: pointer;
+  }
+
+  .price-filter > div .radio-label{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-left: 10px;
+    color: #8C96AB;
+    cursor: pointer;
+  }
+
+  .price-filter > div .radio-label::before{
+    content: "";
+    width: 14px;
+    height: 14px;
+    margin-right: 14px;
+    border: 2px solid #324b78;
+    border-radius: 50%;
+  }
+
+  .price-filter > div .radio-label:hover::before,
+  .price-filter > div input[type=radio]:hover + .radio-label::before{
+    background-color: #384c71;
+  }
+
+  .price-filter > div input[type=radio]:checked + label::before{
+     content: "\26AC"; /* unicode got from google */
+    font-weight: 900;
+    font-size: medium;
+    color: white;
+    background-color: #324b78;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sorting-price > p{
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .sorting-price > div {
+    margin-top: 8px;
+  }
+
+  .sorting-price > div input[type=radio]{
+    position: absolute;
+    visibility: hidden;
+    cursor: pointer;
+  }
+
+  .sorting-price > div label{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-left: 10px;
+    color: #8C96AB;
+    cursor: pointer;
+  }
+
+  .sorting-price > div label::before{
+    content: "";
+    width: 14px;
+    height: 14px;
+    margin-right: 14px;
+    border: 2px solid #324b78;
+    border-radius: 50%;
+  }
+
+  .sorting-price > div label:hover::before,
+  .sorting-price > div input[type=radio]:hover + label::before{
+    background-color: #384c71;
+  }
+
+  .sorting-price > div input[type=radio]:checked + label::before{
+     content: "\26AC"; /* unicode got from google */
+    font-weight: 900;
+    font-size: medium;
+    color: white;
+    background-color: #324b78;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Styling of food elements starts from here */
+
+  .menu-pag-div{
+    width: 68%;
+    height: 675px;
+    margin-left: 45px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .menu-elements{
+    padding: 30px;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px 0px;
+    border-radius: 2px;
+    width: 90%;
+    cursor: pointer;
+  }
+
+  .food-img{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 20%;
+    background-image: url("./images/bakery\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .food-flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .food-details{
+    margin-left: 30px;
+  }
+  .food-name{
+    font-size: 30px;
+    font-weight: 600;
+    color: #192F60;
+  }
+
+  .food-name + p{
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 6px;
+    color: #192F60;
+  }
+
+  .food-desc{
+    font-size: 19px;
+    color: #636F88;
+    padding-left: 6px;
+  }
+
+  .menu-elements hr{
+    border: 1px solid #cfd2d7fd;
+    margin-bottom: 25px;
+  }
+
+  .food-price-details{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .food-price-details .price-label{
+    color: #636F88;
+  }
+
+  .food-price-details .food-cost{
+    color: #192F60;
+    font-weight: 500;
+    margin-left: 40px;
+  }
+
+  /* pagination starts from here */
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page,
+  .arrow {
+    font-size: 20px;
+    padding: 3px 12px;
+    background-color: #f5f5f5;
+    border: 1px solid #8C96AB;
+    border-radius: 6px;
+    margin: 0px 5px;
+    color:#8C96AB;
+    cursor: pointer;
+  }
+
+  .arrow-left {
+    opacity: 0.5;
+  }
+
+  .page.active {
+    background-color:#8C96AB;
+    color: #fff;
+  }
+
+  /* CSS customized by Souvik Roy */
+  
