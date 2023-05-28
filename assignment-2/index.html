@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Static Page</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.css">
+</head>
+
+<script>
+  const inputField = document.getElementById('inputField');
+  const previewList = document.getElementById('previewList');
+
+  inputField.addEventListener('focus', function() {
+    previewList.style.display = 'block';
+  });
+
+  inputField.addEventListener('blur', function() {
+    previewList.style.display = 'none';
+  });
+</script>
+
+<body>
+
+    <section class="container-fluid d-flex flex-column align-items-center main-section px-lg-5 px-sm-1">
+
+        <header class="container d-lg-flex justify-content-end py-3 d-none">
+          <button class="btn text-white ">Login</button>
+          <button class="btn btn-outline-light mx-3 py-2">Create an Account</button>
+        </header>
+
+        <header class="container d-flex justify-content-end py-3 d-lg-none">
+          <button class="btn text-white btn-sm">Login</button>
+          <button class="btn btn-outline-light btn-sm mx-1">Create an Account</button>
+        </header>
+        
+        <div class="bg-white my-2 d-lg-flex justify-content-center align-items-center rounded-circle brand d-none">
+          <p class="m-0 text-danger fw-semibold brand-text">e!</p>
+        </div>
+
+        <div class="bg-white my-2 d-flex justify-content-center align-items-center rounded-circle brand-sm d-lg-none">
+          <p class="m-0 text-danger fw-semibold brand-text-sm">e!</p>
+        </div>
+
+        <p class="fs-2 d-lg-block fw-semibold text-center text-white my-3 d-none">Find the best restaurants, cafés, and bars</p>
+        <p class="fs-5 fw-semibold text-white text-center mx-auto my-3 d-lg-none">Find the best restaurants, cafés, and bars</p>
+
+        <section class=" w-75 h-25 d-lg-flex justify-content-center my-4 d-none">
+          <div class="w-25 d-flex mx-3">
+          <input
+            placeholder="Please type a location"
+            type="text"
+            id="inputField"
+            list="previewList"
+            class="w-100 h-50 px-3 py-2 select"
+          />
+
+          <datalist id="previewList">
+            <option value="Sarjapur Road, Bengaluru">
+            <option value="HSR Layout, Bengaluru">
+            <option value="Kormangala, Bengaluru">
+            <option value="Jay Nagar, Bengaluru">
+          </datalist>
+        </div>
+
+          <div class="w-50 d-flex justify-content-start">
+            <img src="./images/search-icon.png" alt="search" class=" position-absolute
+            p-3">
+             <input
+              placeholder="Search for restaurants"
+              type="search"
+              class="w-100 h-50 px-5 py-2"
+            />
+          </div>
+        </section>
+
+        <section class="d-flex flex-wrap justify-content-center my-4 d-lg-none input-search-sm-div">
+          <div class="d-flex h-50 w-100">
+          <input
+            placeholder="Please type a location"
+            type="text"
+            id="inputField"
+            list="previewList"
+            class="w-100 px-3 py-2 select"
+          />
+
+          <datalist id="previewList">
+            <option value="Sarjapur Road, Bengaluru">
+            <option value="HSR Layout, Bengaluru">
+            <option value="Kormangala, Bengaluru">
+            <option value="Jay Nagar, Bengaluru">
+          </datalist>
+        </div>
+
+          <div class="d-flex h-50 w-100 my-3">
+            <img src="./images/search-icon.png" alt="search" class=" position-absolute
+            p-3">
+             <input
+              placeholder="Search for restaurants"
+              type="search"
+              class="w-100 px-5 py-2"
+            />
+          </div>
+        </section>
+
+      </section>
+
+      <section class="container-fluid d-flex justify-content-center">
+
+        <section class="container m-5 col-12">
+
+          <div class="d-lg-block w-100 px-5 d-none mx-5">
+          <p class="fs-2 fw-bold meal-type-main-title my-1 px-4">Quick Searches</p>
+          <p class="fs-6 text-secondary px-4">Discover restaurants by type of meal</p>
+          </div>
+
+          <div class="d-block w-100 d-lg-none">
+            <p class="fs-2 fw-bold meal-type-main-title m-0">Quick Searches</p>
+            <p class="fs-6 text-secondary">Discover restaurants by type of meal</p>
+            </div>
+
+          <section class="d-lg-flex justify-content-center flex-wrap w-100 d-none">
+            <article class="d-flex my-3 meal-type-item mx-3">
+              <div class="w-50">
+                <img
+                  class="w-100 h-100 object-fit-cover"
+                  src="./images/food-1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="w-50 px-3 my-2">
+                <p class="px-2 fs-5 fw-semibold meal-type-item-title m-1">Breakfast</p>
+                <p class="text-secondary meal-type-item-sub-title m-1">
+                  Start your day with exclusive breakfast options
+                </p>
+              </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="d-flex my-3 meal-type-item mx-3">
+              <div class="w-50">
+                <img
+                  class="w-100 h-100 object-fit-cover"
+                  src="./images/food-2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="w-50 px-3 my-1">
+                <p class="px-2 fs-5 fw-semibold meal-type-item-title m-1">Lunch</p>
+                <p class="text-secondary meal-type-item-sub-title m-1">
+                  Start your day with exclusive breakfast options
+                </p>
+              </div>
+            </article>
+            <!-- 3 -->
+            <article class="d-flex my-3 meal-type-item mx-3">
+              <div class="w-50">
+                <img
+                  class="w-100 h-100 object-fit-cover"
+                  src="./images/food-3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="w-50 px-3 my-1">
+                <p class="px-2 fs-5 fw-semibold meal-type-item-title m-1">Snacks</p>
+                <p class="text-secondary meal-type-item-sub-title m-1">
+                  Start your day with exclusive breakfast options
+                </p>
+              </div>
+            </article>
+            <!-- 4 -->
+            <article class="d-flex my-3 meal-type-item mx-3">
+              <div class="w-50">
+                <img
+                  class="w-100 h-100 object-fit-cover"
+                  src="./images/food-4.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="w-50 px-3 my-1">
+                <p class="px-2 fs-5 fw-semibold meal-type-item-title m-1">Dinner</p>
+                <p class="text-secondary meal-type-item-sub-title m-1">
+                  Start your day with exclusive breakfast options
+                </p>
+              </div>
+            </article>
+            <!-- 5 -->
+            <article class="d-flex my-3 meal-type-item mx-3">
+              <div class="w-50">
+                <img
+                  class="w-100 h-100 object-fit-cover"
+                  src="./images/food-5.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="w-50 px-3 my-1">
+                <p class="px-2 fs-5 fw-semibold meal-type-item-title m-1">Drinks</p>
+                <p class="text-secondary meal-type-item-sub-title m-1">
+                  Start your day with exclusive breakfast options
+                </p>
+              </div>
+            </article>
+            <!-- 6 -->
+            <article class="d-flex my-3 meal-type-item mx-3">
+              <div class="w-50">
+                <img
+                  class="w-100 h-100 object-fit-cover"
+                  src="./images/food-6.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="w-50 px-3 my-1">
+                <p class="px-2 fs-5 fw-semibold meal-type-item-title m-1">Nightlife</p>
+                <p class="text-secondary meal-type-item-sub-title m-1">
+                  Start your day with exclusive breakfast options
+                </p>
+              </div>
+            </article>
+          </section>
+
+          <section class="d-flex justify-content-center flex-wrap w-100 d-lg-none">
+            <article class="d-flex my-3 w-100 sm-shadow-items">
+              <div class="w-50">
+                <img
+                  class="w-100 h-100 object-fit-cover"
+                  src="./images/food-1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="w-50 px-3 my-2">
+                <p class="px-2 fw-semibold meal-type-item-title m-0">Breakfast</p>
+                <p class="text-secondary meal-type-item-sub-title m-1">
+                  Start your day with exclusive breakfast options
+                </p>
+              </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="d-flex my-3 w-100 sm-shadow-items">
+              <div class="w-50">
+                <img
+                  class="w-100 h-100 object-fit-cover"
+                  src="./images/food-2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="w-50 px-3 my-1">
+                <p class="px-2 fw-semibold meal-type-item-title m-0">Lunch</p>
+                <p class="text-secondary meal-type-item-sub-title">
+                  Start your day with exclusive breakfast options
+                </p>
+              </div>
+            </article>
+            <!-- 3 -->
+            <article class="d-flex my-3 w-100 sm-shadow-items">
+              <div class="w-50">
+                <img
+                  class="w-100 h-100 object-fit-cover"
+                  src="./images/food-3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="w-50 px-3 my-1">
+                <p class="px-2 fw-semibold meal-type-item-title m-0">Snacks</p>
+                <p class="text-secondary meal-type-item-sub-title">
+                  Start your day with exclusive breakfast options
+                </p>
+              </div>
+            </article>
+            <!-- 4 -->
+            <article class="d-flex my-3 w-100 sm-shadow-items">
+              <div class="w-50">
+                <img
+                  class="w-100 h-100 object-fit-cover"
+                  src="./images/food-4.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="w-50 px-3 my-1">
+                <p class="px-2 fw-semibold meal-type-item-title m-0">Dinner</p>
+                <p class="text-secondary meal-type-item-sub-title">
+                  Start your day with exclusive breakfast options
+                </p>
+              </div>
+            </article>
+            <!-- 5 -->
+            <article class="d-flex my-3 w-100 sm-shadow-items">
+              <div class="w-50">
+                <img
+                  class="w-100 h-100 object-fit-cover"
+                  src="./images/food-5.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="w-50 px-3 my-1">
+                <p class="px-2 fw-semibold meal-type-item-title m-0">Drinks</p>
+                <p class="text-secondary meal-type-item-sub-title">
+                  Start your day with exclusive breakfast options
+                </p>
+              </div>
+            </article>
+            <!-- 6 -->
+            <article class="d-flex my-3 w-100 sm-shadow-items">
+              <div class="w-50">
+                <img
+                  class="w-100 h-100 object-fit-cover"
+                  src="./images/food-6.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="w-50 px-3 my-1">
+                <p class="px-2 fw-semibold meal-type-item-title m-0">Nightlife</p>
+                <p class="text-secondary meal-type-item-sub-title">
+                  Start your day with exclusive breakfast options
+                </p>
+              </div>
+            </article>
+          </section>
+
+
+        </section>
+
+      </section>
+</body>
+</html>

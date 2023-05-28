@@ -61,12 +61,12 @@
   }
 
   .page-heading{
-    font-size: 36px;
-    font-weight: bolder;
+    font-size: 35px;
+    font-weight: 800;
     color: #192F60;
     margin-left: 10%;
     margin-top: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .main-body-design{
@@ -87,6 +87,7 @@
     display: flex;
     flex-direction: column;
     /* justify-content: space-evenly; */
+    align-items: baseline;
     padding-left: 25px;
     padding-top: 25px;
   }
@@ -275,7 +276,6 @@
   .menu-pag-div{
     width: 68%;
     height: 675px;
-    margin-left: 45px;
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
@@ -289,6 +289,7 @@
     border-radius: 2px;
     width: 90%;
     cursor: pointer;
+    margin-left: 45px;
   }
 
   .food-img{
@@ -379,5 +380,6 @@
     color: #fff;
   }
 
-  /* CSS customized by Souvik Roy */
+  /* CSS customized by Souvik Roy.
+  Codes are pushed to Github : https://github.com/git-souvik22/zomato/tree/master/assignment-1 */
   

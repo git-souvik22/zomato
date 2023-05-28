@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  .main-section {
+    width: 100% !important;
+    height: 475px;
+    margin: auto;
+  
+    background-image: linear-gradient( transparent, #150202d2),
+    url(../images/main-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  
+  .brand {
+    width: 145px;
+    height: 145px;
+  }
+
+  .brand-sm{
+    width: 90px;
+    height: 90px;
+  }
+  
+  .brand-text{
+    font-size: 70px;
+  }
+
+  .brand-text-sm{
+    font-size: 40px;
+  }
+  
+  .meal-type-main-title {
+    font-size: 32px;
+    color: #192f60;
+  }
+  
+  .meal-type-item {
+    box-shadow: rgba(0, 0, 0, 0.15) 0.95px 3.95px 5.6px;
+    width: 320px;
+    height: 170px;
+  }
+
+  .meal-type-item:hover {
+    cursor: pointer;
+  }
+
+  .sm-shadow-items{
+    box-shadow: rgba(0, 0, 0, 0.15) 0.95px 3.95px 5.6px;
+    height: 150px;
+  }
+
+  .sm-shadow-items:hover{
+    cursor: pointer;
+  }
+
+  .drinks {
+    object-position: 100% 100%;
+  }
+  
+  .meal-type-item-title {
+    color: #192f60;
+  }
+
+  .meal-type-item-sub-title{
+    font-size: 15px;
+  }
+
+  .input-search-sm-div{
+    width: 90%;
+  }
+  
