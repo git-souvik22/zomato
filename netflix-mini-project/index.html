@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.css">
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    <!-- header part -->
+      <section class="container-fluid header">
+
+        <nav class="d-flex align-items-center justify-content-between py-3 ">
+            <img src="./images/logo.png" class="logo">
+            <div class="fs-6">
+
+                <button type="button" class="language-btn fw-semibold me-2">
+                    <div class="me-2">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    English
+                    <img src="./images/down-icon.png" class="ms-2 drop-lang">
+                </button>
+
+                <button type="button" class="btn btn-danger rounded-1 py-1 px-3 fw-semibold sign-in-btn">Sign in</button>
+            </div>
+        </nav>
+
+        <div class="container w-lg-75 header-content d-flex flex-column align-items-center ">
+            <p>Unlimited movies, TV shows and more</p>
+
+            <p class="fs-4 mb-lg-3 fw-normal">Watch anywhere. Cancel anytime.</p>
+
+            <p class="fs-5 mb-3 fw-normal">Ready to watch? Enter your email to create or restart your membership.</p>
+
+           <div class="w-50 form-div">
+
+             <form class="d-lg-flex justify-content-between w-100 h-100 d-none">
+                <input type="email" class="input-email ps-3 rounded-1" placeholder="Email address" required>
+                <button type="submit" class="input-button rounded-1 d-flex justify-content-center align-items-center ">Get Started
+                    <span class="pb-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="Hawkins-Icon Hawkins-Icon-Standard" data-name="ChevronRight"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.29297 19.2928L14.5859 12L7.29297 4.70706L8.70718 3.29285L16.7072 11.2928C16.8947 11.4804 17.0001 11.7347 17.0001 12C17.0001 12.2652 16.8947 12.5195 16.7072 12.7071L8.70718 20.7071L7.29297 19.2928Z" fill="currentColor"></path></svg></span>
+                </button>
+             </form>
+
+             <!-- form for small devices -->
+             <form class="d-sm-flex flex-wrap w-100 h-100 d-lg-none">
+              <input type="email" class="input-email w-100 ps-3 mb-2 rounded-1" placeholder="Email address" required>
+
+              <button type="submit" class="input-button w-75 rounded-1 d-flex justify-content-center align-items-center ">Get Started
+                  <span class="pb-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="Hawkins-Icon Hawkins-Icon-Standard" data-name="ChevronRight"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.29297 19.2928L14.5859 12L7.29297 4.70706L8.70718 3.29285L16.7072 11.2928C16.8947 11.4804 17.0001 11.7347 17.0001 12C17.0001 12.2652 16.8947 12.5195 16.7072 12.7071L8.70718 20.7071L7.29297 19.2928Z" fill="currentColor"></path></svg></span>
+              </button>
+           </form>
+
+          </div>
+        </div>
+        
+      </section>
+
+  <section class="container-fluid ">
+    <!-- 2nd division -->
+      <div class="mx-auto d-lg-flex justify-content-center align-items-center py-5 my-lg-2 features  d-none">
+        <div class="w-50 ms-5 ps-5">
+            <p class="features-title">Enjoy on your TV</p>
+            <p class="fs-4 fw-normal">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+            </p>
+        </div>
+
+        <div class="w-50 me-5 pe-5">
+            <img src="./images/feature-1.png" class="feature-1 m-0">
+        </div>
+      </div>
+
+      <!-- 2nd division for small devices -->
+      <div class="mx-auto d-flex flex-wrap justify-content-center py-5 features  d-lg-none">
+        <div class="w-100 text-center ">
+            <p class="features-title">Enjoy on your TV</p>
+            <p class="fs-4 fw-normal">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+            </p>
+        </div>
+
+        <div class="w-100 ">
+            <img src="./images/feature-1.png" class="feature-1 m-0">
+        </div>
+      </div>
+
+    <!-- 3rd division  -->
+    <div class="mx-auto d-lg-flex justify-content-center align-items-center py-5 my-lg-5 features  d-none">
+
+        <div class="w-50 ms-5 ps-5">
+            <img src="./images/feature-2.png" class="feature-2 m-0">
+        </div>
+
+        <div class="w-50 me-5 pe-5">
+            <p class="features-title">Download your shows to watch offline</p>
+            <p class="fs-4 fw-normal">Save your favourites easily and always have something to watch.
+            </p>
+        </div>
+    </div>
+
+    <!-- 3rd division for small devices -->
+    <div class="mx-auto d-flex flex-wrap justify-content-center py-5 features  d-lg-none">
+      <div class="w-100 text-center ">
+          <p class="features-title">Download your shows to watch offline</p>
+          <p class="fs-4 fw-normal">Save your favourites easily and always have something to watch.
+          </p>
+      </div>
+
+      <div class="w-100 ">
+          <img src="./images/feature-2.png" class="feature-2 m-0">
+      </div>
+    </div>
+
+    <!-- 4th division -->
+    <div class="mx-auto d-lg-flex justify-content-center align-items-center py-5 my-lg-5 features  d-none">
+        <div class="w-50 ms-5 ps-5">
+            <p class="features-title">Watch everywhere</p>
+            <p class="fs-4 fw-normal">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+            </p>
+        </div>
+        
+        <div class="w-50 me-5 pe-5">
+            <img src="./images/feature-3.png" class="feature-3 m-0">
+        </div>
+    </div>
+
+    <!-- 4th division for small devices -->
+    <div class="mx-auto d-flex flex-wrap justify-content-center py-5 features  d-lg-none">
+      <div class="w-100 text-center ">
+          <p class="features-title">Watch everywhere</p>
+          <p class="fs-4 fw-normal">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+          </p>
+      </div>
+
+      <div class="w-100 ">
+          <img src="./images/feature-3.png" class="feature-3 m-0">
+      </div>
+    </div>
+
+    <!-- 5th division -->
+    <div class="mx-auto d-lg-flex justify-content-center align-items-center py-5 my-lg-5 features  d-none">
+        <div class="w-50 ms-5 ps-5">
+            <img src="./images/feature-4.png" class="feature-4 m-0">
+        </div>
+
+        <div class="w-50 me-5 pe-5">
+            <p class="features-title">Create profiles for kids</p>
+            <p class="fs-4 fw-normal">Send children on adventures with their favourite characters in a space made just for them—free with your membership.
+            </p>
+        </div>
+    </div>
+
+     <!-- 5th division for small devices -->
+     <div class="mx-auto d-flex flex-wrap justify-content-center py-5 features d-lg-none">
+      <div class="w-100 text-center ">
+          <p class="features-title">Create profiles for kids</p>
+          <p class="fs-4 fw-normal">Send children on adventures with their favourite characters in a space made just for them—free with your membership.
+          </p>
+      </div>
+
+      <div class="w-100 ">
+          <img src="./images/feature-4.png" class="feature-4 m-0">
+      </div>
+    </div>
+
+  </section>
+
+    <!-- accordions -->
+    <section class="container-fluid w-100 d-flex flex-column justify-content-center align-items-center pb-4 features">
+
+      <div class="fs-1 fw-bold mt-4">
+        <p class="FAQ-title">Frequently Asked Questions</p>
+      </div>
+
+      <!-- 1st accordion -->
+      <div class="accordion w-75">
+        <div class="accordion-header w-100 px-4">
+          <h3>What is Netflix?</h3>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-content w-100">
+          <div class="p-4 fs-4">
+          <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more - on thousands of internet-connected devices.
+            <br> <br>
+            You can watch as much as you want, whenever you want, without a single ad - all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd accordion -->
+      <div class="accordion w-75">
+        <div class="accordion-header w-100 px-4">
+          <h3>How much does Netflix cost?</h3>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-content w-100">
+          <div class="p-4 fs-4">
+          <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd accordion -->
+      <div class="accordion w-75">
+        <div class="accordion-header w-100 px-4">
+          <h3>Where can I watch?</h3>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-content w-100">
+          <div class="p-4 fs-4">
+          <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+            <br> <br>
+            You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4th accordion -->
+      <div class="accordion w-75">
+        <div class="accordion-header w-100 px-4">
+          <h3>How do I cancel?</h3>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-content w-100">
+          <div class="p-4 fs-4">
+          <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees - start or stop your account anytime.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5th accordion -->
+      <div class="accordion w-75">
+        <div class="accordion-header w-100 px-4">
+          <h3>What can I watch on Netflix?</h3>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-content w-100">
+          <div class="p-4 fs-4">
+          <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6th accordion -->
+      <div class="accordion w-75">
+        <div class="accordion-header w-100 px-4">
+          <h3>Is Netflix good for kids?</h3>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-content w-100">
+          <div class="p-4 fs-4">
+          <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+            <br> <br>
+            Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don't want kids to see.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-100 d-flex flex-column align-items-center my-5">
+        <p class="fs-5 mb-2 fw-normal text-center">Ready to watch? Enter your email to create or restart your membership.</p>
+
+        <div class="w-50 form-div">
+
+          <form class="d-lg-flex justify-content-between w-100 h-100 d-none">
+            <input type="email" class="input-email ps-3 rounded-1" placeholder="Email address" required>
+            <button type="submit" class="input-button rounded-1 d-flex justify-content-center align-items-center ">Get Started
+            <span class="pb-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="Hawkins-Icon Hawkins-Icon-Standard" data-name="ChevronRight"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.29297 19.2928L14.5859 12L7.29297 4.70706L8.70718 3.29285L16.7072 11.2928C16.8947 11.4804 17.0001 11.7347 17.0001 12C17.0001 12.2652 16.8947 12.5195 16.7072 12.7071L8.70718 20.7071L7.29297 19.2928Z" fill="currentColor"></path></svg></span>
+            </button>
+          </form>
+
+          <!-- form for small devices -->
+          <form class="d-sm-flex flex-wrap w-100 h-100 d-lg-none">
+            <input type="email" class="input-email w-100 ps-3 mb-2 rounded-1" placeholder="Email address" required>
+
+            <button type="submit" class="input-button w-75 rounded-1 d-flex justify-content-center align-items-center ">Get Started
+                <span class="pb-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="Hawkins-Icon Hawkins-Icon-Standard" data-name="ChevronRight"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.29297 19.2928L14.5859 12L7.29297 4.70706L8.70718 3.29285L16.7072 11.2928C16.8947 11.4804 17.0001 11.7347 17.0001 12C17.0001 12.2652 16.8947 12.5195 16.7072 12.7071L8.70718 20.7071L7.29297 19.2928Z" fill="currentColor"></path></svg></span>
+            </button>
+         </form>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- footer part -->
+    <section class="container-fluid">
+
+      <footer class="container w-75 pt-5 my-5">
+
+        <span class="d-flex">
+          Questions? Call
+          <a href="_blank" class="text-light fs-6 ms-1">000-800-919-1694</a>
+        </span>
+
+        <div class="d-flex w-75 justify-content-between py-4 flex-wrap">
+
+          <div>
+            <p class="text-decoration-underline">FAQ</p>
+            <p class="text-decoration-underline">Media Centre</p>
+            <p class="text-decoration-underline">Ways to Watch</p>
+            <p class="text-decoration-underline">Cookie Preferences</p>
+            <p class="text-decoration-underline">Speed Test</p>
+          </div>
+
+          <div>
+            <p class="text-decoration-underline">Help Centre</p>
+            <p class="text-decoration-underline">Investor Relations</p>
+            <p class="text-decoration-underline">Terms of Use</p>
+            <p class="text-decoration-underline">Corporate Information</p>
+            <p class="text-decoration-underline">Legal Notices</p>
+          </div>
+
+          <div>
+            <p class="text-decoration-underline">Account</p>
+            <p class="text-decoration-underline">Jobs</p>
+            <p class="text-decoration-underline">Privacy</p>
+            <p class="text-decoration-underline">Contact Us</p>
+            <p class="text-decoration-underline">Only on Netflix</p>
+          </div>
+
+        </div>
+
+        <div class="mb-4">
+          <button type="button" class="language-btn fw-semibold">
+            <div class="me-2">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            English 
+            <img src="./images/down-icon.png" class="ms-2 drop-lang">
+          </button>
+        </div>
+
+        <span>Netflix India</span>
+
+      </footer>
+
+    </section>
+
+    <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    accordionHeaders.forEach(function(header) {
+      header.addEventListener('click', function() {
+        const accordion = this.parentNode;
+        const isOpen = accordion.classList.contains('open');
+
+        // Close any open accordion
+        closeAllAccordions();
+
+        // Toggle the clicked accordion
+        if (!isOpen) {
+          accordion.classList.add('open');
+        }
+      });
+    });
+
+    function closeAllAccordions() {
+      accordionHeaders.forEach(function(header) {
+        const accordion = header.parentNode;
+        accordion.classList.remove('open');
+    });
+  }
+ }); 
+
+  </script>
+      
+</body>
+</html>

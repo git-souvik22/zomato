@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 0% !important;
+    word-spacing: 0% !important;
+}
+
+body{
+    background: black;
+    color: #fff;
+}
+
+.header{
+    width: 100%;
+    height: 710px;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('./images/header-image.png');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+    border-bottom: 8px solid rgba(42, 41, 41, 0.911);
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+.language-btn{
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.sign-in-btn{
+    font-size: 14px;
+    background-color: rgb(237, 8, 8);
+}
+
+.drop-lang{
+    width: 10px;
+}
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 90px;
+}
+
+.header-content p{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.form-div{
+    height: 100px;
+}
+
+.input-email{
+    width: 62%;
+    height: 50px;
+    background-color: rgba(16, 16, 16, 0.541);
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.647);
+}
+
+.input-email:focus {
+    outline-offset: 1px;
+    outline: 2px solid #ffffffd8;
+}
+
+
+.input-button{
+    width: 36%;
+    height: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(237, 8, 8);
+    border: none;
+}
+
+.features-title{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.feature-1{
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+}
+
+.feature-2{
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+}
+
+.feature-3{
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+}
+
+.feature-4{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.features{
+    border-bottom: 8px solid rgba(42, 41, 41, 0.911);
+}
+
+.accordion {
+    margin-bottom: 10px;
+    /* border: 1px solid white; */
+    background-color: #3130309e;
+  }
+
+  .accordion-header {
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .accordion-header:hover{
+    background-color: #5c5757a7;
+  }
+
+  .accordion-content {
+    max-height: 0;
+    background-color: #292828d9;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .accordion.open .accordion-content {
+    max-height: 500px;
+  }
+
+  .accordion.open .accordion-icon {
+    transform: rotate(45deg);
+  }
+
+.accordion-icon {
+    display: inline-block;
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+
+  .FAQ-title{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  /* media queries */
+
+  @media (min-width: 960px) and (max-width: 1189px){
+    .header{
+        padding: 10px 3%;
+    }
+    .input-button{
+        font-size: 1.1rem;
+        padding: 0px 5px;
+    }
+
+    .features-title{
+        font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 959px){
+    .header{
+        padding: 0px 25px;
+        height: 550px;
+    }
+
+    .header-content{
+        margin-top: 50px;
+    }
+
+    .header-content p{
+        font-size: 2.3rem;
+    }
+
+    .features-title{
+        font-size: 2rem;
+    }
+
+    .input-email{
+        height: 40px;
+    }
+
+    .input-button{
+        height: 40px;
+        margin: 0px auto;
+        font-size: 1.1rem;
+    }
+
+    .FAQ-title{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+  }
+
+  @media (max-width: 640px){
+    .logo{
+        width: 95px;
+    }
+
+    .sign-in-btn{
+        padding: 5px !important;
+    }
+
+    .header-content{
+        margin-top: 20px;
+    }
+
+    .header-content p{
+        font-size: 2rem;
+    }
+
+    .accordion{
+        width: 97% !important;
+    }
+
+    .accordion-header {
+        padding: 0px;
+    }
+
+    .accordion-header h3{
+        font-size: 20px;
+    }
+
+    .accordion-content div p{
+        font-size: 18px;
+    }
+
+    footer{
+        margin: 10px !important;
+    }
+
+  }
